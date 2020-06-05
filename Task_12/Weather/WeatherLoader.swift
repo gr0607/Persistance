@@ -5,7 +5,7 @@ import SwiftyJSON
 class WeatherLoader{
        
     func loadWeather(completion: @escaping ([Weather]) -> Void){
-        let url = URL(string: "https://api.openweathermap.org/data/2.5/onecall?lat=60.99&lon=30.9&exclude=hourly&units=metric&appid=94f5fccfd1a246a33e54dfd21acc63a9")!
+        let url = URL(string: Constants.weatherURL)!
         
         let request = URLRequest(url: url)
         
@@ -62,7 +62,7 @@ class WeatherLoader{
         print("hhhh")
         var jsonWeather: JSON? = nil
        DispatchQueue.main.async {
-        AF.request("https://api.openweathermap.org/data/2.5/onecall?lat=60.99&lon=30.9&exclude=hourly&units=metric&appid=94f5fccfd1a246a33e54dfd21acc63a9", method: .get).validate().responseJSON { response in
+        AF.request(Constants.weatherURL, method: .get).validate().responseJSON { response in
             switch response.result {
             case .success(let value):
                 jsonWeather = JSON(value)

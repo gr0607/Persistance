@@ -17,8 +17,6 @@
 		8481D678248822AE00C97E91 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481D677248822AE00C97E91 /* ToDoViewController.swift */; };
 		8481D67A248822B300C97E91 /* RealmPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481D679248822B300C97E91 /* RealmPersistance.swift */; };
 		8481D67C248822B800C97E91 /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481D67B248822B800C97E91 /* TasksTableViewController.swift */; };
-		8481D67F2488248E00C97E91 /* Task_14_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8481D67D2488248E00C97E91 /* Task_14_CoreData.xcdatamodeld */; };
-		8481D6812488249900C97E91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481D6802488249800C97E91 /* AppDelegate.swift */; };
 		8481D684248824EC00C97E91 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8481D683248824EC00C97E91 /* CoreDataViewController.swift */; };
 		8484F181247ECF8D001C91A1 /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8484F180247ECF8D001C91A1 /* WeatherTableViewController.swift */; };
 		84F80468247932E100012B84 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F80467247932E100012B84 /* SceneDelegate.swift */; };
@@ -26,6 +24,9 @@
 		84F8046D247932E100012B84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F8046B247932E100012B84 /* Main.storyboard */; };
 		84F8046F247932E300012B84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F8046E247932E300012B84 /* Assets.xcassets */; };
 		84F80472247932E300012B84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F80470247932E300012B84 /* LaunchScreen.storyboard */; };
+		84FE8FB02489FEDF00D35243 /* AppDelegate .swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE8FAF2489FEDF00D35243 /* AppDelegate .swift */; };
+		84FE8FB32489FF7000D35243 /* Task_14_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84FE8FB12489FF7000D35243 /* Task_14_CoreData.xcdatamodeld */; };
+		84FE8FB7248A01B900D35243 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE8FB6248A01B900D35243 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +40,6 @@
 		8481D677248822AE00C97E91 /* ToDoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 		8481D679248822B300C97E91 /* RealmPersistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmPersistance.swift; sourceTree = "<group>"; };
 		8481D67B248822B800C97E91 /* TasksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
-		8481D67E2488248E00C97E91 /* Task_14_CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task_14_CoreData.xcdatamodel; sourceTree = "<group>"; };
-		8481D6802488249800C97E91 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../Task_14_CoreData/Task_14_CoreData/AppDelegate.swift; sourceTree = "<group>"; };
 		8481D683248824EC00C97E91 /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		8484F180247ECF8D001C91A1 /* WeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
 		84F80462247932E100012B84 /* Task_12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task_12.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +49,9 @@
 		84F8046E247932E300012B84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F80471247932E300012B84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F80473247932E300012B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FE8FAF2489FEDF00D35243 /* AppDelegate .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate .swift"; sourceTree = "<group>"; };
+		84FE8FB22489FF7000D35243 /* Task_14_CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task_14_CoreData.xcdatamodel; sourceTree = "<group>"; };
+		84FE8FB6248A01B900D35243 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		AA77C638E39F495CED4CBB06 /* Pods-Task_12.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task_12.release.xcconfig"; path = "Target Support Files/Pods-Task_12/Pods-Task_12.release.xcconfig"; sourceTree = "<group>"; };
 		DF6EF9FD09318BA40C4BC6C8 /* Pods-Task_12.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task_12.debug.xcconfig"; path = "Target Support Files/Pods-Task_12/Pods-Task_12.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,13 +141,14 @@
 				8481D6762488229D00C97E91 /* RealmPersistance */,
 				8481D6712488222B00C97E91 /* DefaultPersistance */,
 				841168CA248815E4005689BC /* Weather */,
-				8481D6802488249800C97E91 /* AppDelegate.swift */,
 				84F80467247932E100012B84 /* SceneDelegate.swift */,
 				84F8046B247932E100012B84 /* Main.storyboard */,
 				84F8046E247932E300012B84 /* Assets.xcassets */,
 				84F80470247932E300012B84 /* LaunchScreen.storyboard */,
 				84F80473247932E300012B84 /* Info.plist */,
-				8481D67D2488248E00C97E91 /* Task_14_CoreData.xcdatamodeld */,
+				84FE8FB6248A01B900D35243 /* Constants.swift */,
+				84FE8FAF2489FEDF00D35243 /* AppDelegate .swift */,
+				84FE8FB12489FF7000D35243 /* Task_14_CoreData.xcdatamodeld */,
 			);
 			path = Task_12;
 			sourceTree = "<group>";
@@ -275,16 +278,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8481D678248822AE00C97E91 /* ToDoViewController.swift in Sources */,
+				84FE8FB32489FF7000D35243 /* Task_14_CoreData.xcdatamodeld in Sources */,
 				8484F181247ECF8D001C91A1 /* WeatherTableViewController.swift in Sources */,
 				8481D6752488225200C97E91 /* UserDeafultViewController.swift in Sources */,
 				8481D684248824EC00C97E91 /* CoreDataViewController.swift in Sources */,
-				8481D6812488249900C97E91 /* AppDelegate.swift in Sources */,
 				847E0305247E28F6001D3FB8 /* WeatherSimpleCell.swift in Sources */,
 				84F8046A247932E100012B84 /* ViewController.swift in Sources */,
+				84FE8FB7248A01B900D35243 /* Constants.swift in Sources */,
 				847E0301247AB376001D3FB8 /* WeatherLoader.swift in Sources */,
 				8481D6732488224C00C97E91 /* DefaultPersistance.swift in Sources */,
 				8481D67C248822B800C97E91 /* TasksTableViewController.swift in Sources */,
-				8481D67F2488248E00C97E91 /* Task_14_CoreData.xcdatamodeld in Sources */,
+				84FE8FB02489FEDF00D35243 /* AppDelegate .swift in Sources */,
 				841168CC248816A5005689BC /* WeatherPersistance.swift in Sources */,
 				84F80468247932E100012B84 /* SceneDelegate.swift in Sources */,
 				847E0303247AC3B0001D3FB8 /* Weather.swift in Sources */,
@@ -488,14 +492,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		8481D67D2488248E00C97E91 /* Task_14_CoreData.xcdatamodeld */ = {
+		84FE8FB12489FF7000D35243 /* Task_14_CoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				8481D67E2488248E00C97E91 /* Task_14_CoreData.xcdatamodel */,
+				84FE8FB22489FF7000D35243 /* Task_14_CoreData.xcdatamodel */,
 			);
-			currentVersion = 8481D67E2488248E00C97E91 /* Task_14_CoreData.xcdatamodel */;
-			name = Task_14_CoreData.xcdatamodeld;
-			path = ../../Task_14_CoreData/Task_14_CoreData/Task_14_CoreData.xcdatamodeld;
+			currentVersion = 84FE8FB22489FF7000D35243 /* Task_14_CoreData.xcdatamodel */;
+			path = Task_14_CoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
