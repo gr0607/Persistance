@@ -37,6 +37,7 @@ class TasksTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //Create main alert controller
         let alert = UIAlertController(title: "Options", message: "Chose", preferredStyle: .alert)
           
           let deleteAction = UIAlertAction(title: "Delete", style: .default) { (action: UIAlertAction!) -> Void in
@@ -47,6 +48,7 @@ class TasksTableViewController: UITableViewController {
               tableView.deleteRows(at: [indexPath], with: .automatic)
           }
         
+        //create alert controller for edit item
         let editAction = UIAlertAction(title: "Edit", style: .default) {
             (action: UIAlertAction!) -> Void in
             
@@ -70,7 +72,8 @@ class TasksTableViewController: UITableViewController {
             alertEdit.addAction(cancelAction)
             self.present(alertEdit,animated: true, completion: nil)
         }
-          
+        
+       //create alert controller for change status
         let statusAction = UIAlertAction(title: "Status" , style:  .default) {
             (action: UIAlertAction!) -> Void in
             
@@ -97,7 +100,6 @@ class TasksTableViewController: UITableViewController {
             alertStatus.addAction(doneAction)
             
             self.present(alertStatus, animated: true, completion: nil)
-            
         }
         
           let cancelAction = UIAlertAction(title: "Cancel", style: .default) { (action: UIAlertAction!) -> Void in
