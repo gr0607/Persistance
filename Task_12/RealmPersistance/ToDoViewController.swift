@@ -16,7 +16,5 @@ class ToDoViewController: UIViewController
         let str = userInputTextField.text ?? "Empty value"
         RealmPersistance.shared.addItem(str)
     }
-    
-   
-    
+          
 }

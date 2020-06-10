@@ -3,13 +3,14 @@ import Foundation
 
 class MyItem: Object {
     @objc dynamic var item = ""
+    @objc dynamic var status = 0
 }
 
 class RealmPersistance {
     
     static let shared = RealmPersistance()
     
-    private let realm = try! Realm()
+    private var realm = try! Realm()
     
      var myItems = [MyItem]()
        
@@ -24,6 +25,7 @@ class RealmPersistance {
     func addItem(_ item: String) {
         let newItem = MyItem()
         newItem.item = item
+        newItem.status = 0
         myItems.append(newItem)
         
         try! realm.write {
@@ -35,5 +37,22 @@ class RealmPersistance {
         try! realm.write {
             realm.delete(item)
         }
+    }
+    
+    func updateItem(_ item: MyItem,_ description: String ) {
+        
+        let theItem = realm.objects(MyItem.self).filter("item == %@", item.item ).first
+       
+        try! realm.write {
+            theItem?.item = description
+        }
+    }
+    
+    func updateStatus(_ item: MyItem, _ status : Int) {
+        let theItem = realm.objects(MyItem.self).filter("item == %@", item.item ).first
+        
+         try! realm.write {
+             theItem?.status = status
+         }
     }
 }
