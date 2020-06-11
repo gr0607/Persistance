@@ -19,16 +19,25 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let weathersR = WeatherPersistance.shared.getWeather() {
+            self.weathers = weathersR
+            setWeather()
+        }
+        
         WeatherLoader().loadWeather() { weathers in
             self.weathers = weathers
-                        
-            let todayWeather = weathers[0]
-            
-            self.mainLabel.text = todayWeather.desc
-            self.temperatureLabel.text = "Temperature is \(todayWeather.temperature)с"
-            self.windSpeedLabel.text = "WindSpeed is \(todayWeather.windSpeed)m/s"
+            self.setWeather()
     }
   }
+    
+    func setWeather() {
+        let todayWeather = self.weathers[0]
+        
+        self.mainLabel.text = todayWeather.desc
+        self.temperatureLabel.text = "Temperature is \(todayWeather.temperature)с"
+        self.windSpeedLabel.text = "WindSpeed is \(todayWeather.windSpeed)m/s"
+    }
 }
 
 

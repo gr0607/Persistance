@@ -6,13 +6,17 @@ class WeatherPersistance {
     
     private let realm = try! Realm()
     
-    var realmWeather = [Weather]()
+  
     
-    func getWeather() {
+    func getWeather() -> [Weather]? {
+        var realmWeather = [Weather]()
+        
         let weathers = realm.objects(Weather.self)
         for weather in weathers {
             realmWeather.append(weather)
         }
+        
+        return realmWeather
     }
     
     func saveWeather(weathers: [Weather]) {
@@ -20,6 +24,12 @@ class WeatherPersistance {
             for w in weathers {
             realm.add(w)
             }
+        }
+    }
+    
+    func removeWeather(){
+        try! realm.write {
+                    realm.deleteAll()
         }
     }
 }

@@ -4,16 +4,22 @@ import UIKit
 class WeatherTableViewController: UIViewController {
 
     @IBOutlet weak var weatherData: UITableView!
-    var weathers : [Weather] = WeatherPersistance.shared.realmWeather
+    var weathers : [Weather] = []
     
     let dateFormatter = DateFormatter()
         
     override func viewDidLoad() {
         super.viewDidLoad()
-         
+        if let weathersR = WeatherPersistance.shared.getWeather() {
+            
+            self.weathers = weathersR
+            print(weathers[0])
+            self.weatherData.reloadData()
+        }
           WeatherLoader().loadWeatherWithAlamo() { weathers in
                   self.weathers = weathers
                   self.weatherData.reloadData()
+            WeatherPersistance.shared.removeWeather()
             WeatherPersistance.shared.saveWeather(weathers: weathers)
           }
     }
